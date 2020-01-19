@@ -1,5 +1,6 @@
 # Build
   1. Copy below files to the same directory.
+  - etl_server.cfg
   - pak0.pk3
   - pak1.pk3
   - pak2.pk3
