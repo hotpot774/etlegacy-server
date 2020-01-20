@@ -17,3 +17,6 @@
   All containers will stop.
 
   `sudo docker stop $(sudo docker ps -a -q)`
+
+# Wiki
+  [Wiki](https://github.com/hotpot774/etlegacy/wiki)にも少し書いた。(Japanese)
