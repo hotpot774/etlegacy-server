@@ -1,9 +1,8 @@
 # Build
-  1. Make "etmain" directory.
 
-  2. Copy pak0.pk3, pak1.pk3 and pak2.pk3 from original ET to the "etmain" directory.
+  1. Copy pak0.pk3, pak1.pk3 and pak2.pk3 from original ET to the "etmain" directory.
 
-  3. Run a command below.
+  2. Run a command below.
 
   `sudo docker build -t etlegacy .`
 
