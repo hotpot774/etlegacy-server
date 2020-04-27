@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 LABEL maintainer="hotpot774"
 
-# Install prereqs
+# Install curl
 RUN apt-get update && \
     apt-get install -y curl
 
@@ -12,7 +12,7 @@ RUN curl https://www.etlegacy.com/download/file/121 | tar xvz; mv etlegacy-v2.76
 #Copy etmain
 COPY etmain/ /etlegacy/etmain/
 
-#Copy original pk3 files
+#Copy custom pk3 files, including sound files
 COPY pak3/ /etlegacy/legacy/
 
 #Remove prereqs and add a sed command to the entrypoint file
@@ -27,3 +27,4 @@ EXPOSE 27960/udp
 USER root
 WORKDIR /etlegacy
 ENTRYPOINT ./etlded_bot.sh
+
