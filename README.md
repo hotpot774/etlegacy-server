@@ -1,4 +1,4 @@
-# ET: Legacy dedicated server
+# ET: Legacy dedicated server for VIPET
 ## Build
 
   1. Copy pak0.pk3, pak1.pk3 and pak2.pk3 from original ET to the "etmain" directory.
