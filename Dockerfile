@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 LABEL maintainer="hotpot774"
 
-# Install curl
+# Install "curl"
 RUN apt-get update && \
     apt-get install -y curl
 
@@ -15,7 +15,7 @@ COPY etmain/ /etlegacy/etmain/
 #Copy custom pk3 files, including sound files
 COPY pak3/ /etlegacy/legacy/
 
-#Remove prereqs and add a sed command to the entrypoint file
+#Remove "curl" and add "sed" to the entrypoint file
 RUN apt-get purge -y curl && \
     apt-get -y clean && \
     #Remove the apt list

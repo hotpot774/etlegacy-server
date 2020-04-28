@@ -5,7 +5,7 @@
 
   2. Run a command below.
 
-  `sudo docker build -t etlegacy .`
+      `sudo docker build -t etlegacy .`
 
 ## Run
 
