@@ -13,7 +13,7 @@ RUN curl https://www.etlegacy.com/download/file/121 | tar xvz; mv etlegacy-v2.76
 COPY etmain/ /etlegacy/etmain/
 
 #Copy custom pk3 files, including sound files
-COPY pak3/ /etlegacy/legacy/
+COPY legacy/ /etlegacy/legacy/
 
 #Remove "curl" and add "sed" to the entrypoint file
 RUN apt-get purge -y curl && \
